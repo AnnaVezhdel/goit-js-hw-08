@@ -92,9 +92,7 @@ function handleClick(event) {
     }
 const modalImage = `<img src='${event.target.dataset.source}' alt='$event.target.alt}' width=1112px height=640px />`;
 
-  const instance = basicLightbox.create(modalImage, {
-    className: 'modal-image',
-  });
+  const instance = basicLightbox.create(modalImage);
 
   instance.show();
 }
